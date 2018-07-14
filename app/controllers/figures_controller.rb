@@ -42,7 +42,7 @@ class FiguresController < ApplicationController
   
   
   
-  patch '/figures/:id' do 
+  post '/figures/:id' do 
      @figure = Figure.find(params[:id])
     @figure.update(params[:figure])
     
